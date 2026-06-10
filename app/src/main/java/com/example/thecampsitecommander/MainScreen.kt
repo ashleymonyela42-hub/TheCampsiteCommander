@@ -6,6 +6,7 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Button
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -19,9 +20,24 @@ class MainScreen : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             TheCampsiteCommanderTheme {
-                
+                Button(
+                    onClick = {
+
+                    }
+                ) {
+                    Text("Add gear")
+                }
+                var item = "Tent, Marshmallow, Flashlight"
+                var category = "Shelter, Food, Safety"
+                var quantity = "1, 3, 2"
+                var comment = "4-person waterproof, For mega size, Check batteries"
+
+                val totalitems = 3
+
             }
+
         }
     }
 }
+
 
