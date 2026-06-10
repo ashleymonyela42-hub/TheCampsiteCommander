@@ -24,6 +24,7 @@ class SplashScreen : ComponentActivity() {
                 Text("Campfire")
                 Toast.LENGTH_SHORT
                 val intent = Intent(this@SplashScreen, MainScreen::class.java)
+                startActivity(intent)
 
 
             }

@@ -29,8 +29,8 @@ class DetailedView : ComponentActivity() {
                         }
                     ) {
                         Text("Full list")
-                        val intent = Intent(this@DetailedView, Mainscreen::class.java)
-                        StartActivity(intent)
+                        val intent = Intent(this@DetailedView, MainScreen::class.java)
+                        startActivity(intent)
                     }
                 }
             }
