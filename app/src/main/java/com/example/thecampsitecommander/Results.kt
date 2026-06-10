@@ -6,6 +6,7 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Button
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -19,7 +20,19 @@ class Results : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             TheCampsiteCommanderTheme {
-                
+                val totalitems = intent.getIntExtra("totalitems", 0)
+                val item = intent.getStringExtra("item")
+                val category = intent.getStringExtra("category")
+                val quantity = intent.getStringExtra("quality")
+                val comment = intent.getStringExtra("comment")
+                Button(
+                    onClick = {
+
+                    }
+                ) {
+                    finishAffinity()
+                    Text("Exit")
+                }
             }
         }
     }
