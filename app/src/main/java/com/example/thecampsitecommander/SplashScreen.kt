@@ -21,7 +21,7 @@ class SplashScreen : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             TheCampsiteCommanderTheme {
-                
+
 
 
             }
