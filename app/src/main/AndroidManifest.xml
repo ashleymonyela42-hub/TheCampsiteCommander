@@ -29,6 +29,12 @@
             android:label="@string/title_activity_splash_screen"
             android:theme="@style/Theme.TheCampsiteCommander"
             android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".DetailedView"
+            android:exported="false"
+            android:label="@string/title_activity_detailed_view"
+            android:theme="@style/Theme.TheCampsiteCommander"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>
