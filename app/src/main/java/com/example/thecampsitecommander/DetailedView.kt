@@ -25,7 +25,6 @@ class DetailedView : ComponentActivity() {
                 Column{
                     Button(
                         onClick = {
-
                         }
                     ) {
                         Text("Full list")
@@ -39,7 +38,6 @@ class DetailedView : ComponentActivity() {
                         Text(text = "Back to base")
                         val intent = Intent(this@DetailedView, MainScreen::class.java)
                         startActivity(intent)
-
                     }
                     Button(
                         onClick = {
