@@ -33,7 +33,7 @@ class MainActivity : ComponentActivity() {
                     }
                 ) {
                     Text("Add gear")
-                    var  item by remember { mutableStateOf("") }
+                    var item by remember { mutableStateOf("") }
                     OutlinedTextField(
                         value = item,
                         onValueChange = { item = it },
@@ -42,26 +42,28 @@ class MainActivity : ComponentActivity() {
                     var category by remember { mutableStateOf("") }
                     OutlinedTextField(
                         value = category,
-                        onValueChange = { category = it},
-                        label = {Text("category")}
+                        onValueChange = { category = it },
+                        label = { Text("category") }
                     )
                     var quantity by remember { mutableStateOf("") }
                     OutlinedTextField(
                         value = quantity,
-                        onValueChange = {quantity=it},
-                        label = {Text("quantity")}
+                        onValueChange = { quantity = it },
+                        label = { Text("quantity") }
                     )
-                var item = "Tent, Marshmallow, Flashlight"
-                var category = "Shelter, Food, Safety"
-                var quantity = "1, 3, 2"
-                var comment = "4-person waterproof, For mega size, Check batteries"
+                    var comment by remember { mutableStateOf("") }
+                    OutlinedTextField(
+                        value = comment,
+                        onValueChange = { comment = it },
+                        label = { Text("comment") }
+                    )
 
-                val totalitems = 3
+                    val totalitems = 3
 
-            }
+                }
 
             }
         }
     }
-
+}
 
