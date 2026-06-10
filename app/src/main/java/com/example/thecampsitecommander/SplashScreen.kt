@@ -21,10 +21,7 @@ class SplashScreen : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             TheCampsiteCommanderTheme {
-                Text("Campfire")
-                Toast.LENGTH_SHORT
-                val intent = Intent(this@SplashScreen, MainScreen::class.java)
-                startActivity(intent)
+                
 
 
             }

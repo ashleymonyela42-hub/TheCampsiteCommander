@@ -35,7 +35,6 @@ class MainScreen : ComponentActivity() {
                 val totalitems = 3
 
             }
-
         }
     }
 }

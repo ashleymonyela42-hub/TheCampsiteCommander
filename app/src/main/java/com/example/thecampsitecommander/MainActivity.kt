@@ -1,6 +1,8 @@
 package com.example.thecampsitecommander
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -19,7 +21,10 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             TheCampsiteCommanderTheme {
-
+                Text("Campfire")
+                Toast.LENGTH_SHORT
+                val intent = Intent(this@MainActivity, MainScreen::class.java)
+                startActivity(intent)
             }
         }
     }
