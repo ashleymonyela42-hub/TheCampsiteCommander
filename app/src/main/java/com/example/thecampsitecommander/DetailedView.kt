@@ -32,6 +32,23 @@ class DetailedView : ComponentActivity() {
                         val intent = Intent(this@DetailedView, MainActivity::class.java)
                         startActivity(intent)
                     }
+                    Button(
+                        onClick = {
+                        }
+                    ) {
+                        Text(text = "Back to base")
+                        val intent = Intent(this@DetailedView, MainScreen::class.java)
+                        startActivity(intent)
+
+                    }
+                    Button(
+                        onClick = {
+                        }
+                    ){
+                        Text("Next")
+                        val intent = Intent(this@DetailedView, Results::class.java)
+                        startActivity(intent)
+                    }
                 }
             }
         }

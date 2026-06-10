@@ -29,23 +29,23 @@ class MainScreen : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             TheCampsiteCommanderTheme {
-            } else {
-            Toast.makeText(
-                this,
-                "Campfire",
-                Toast.LENGTH_SHORT
-            ).show()
+                {
+                Toast.makeText(
+                    this,
+                    "Campfire",
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
+                showNextCard()
+            }
+            val intent = Intent(this@MainScreen, MainActivity::class.java)
+            startActivity(intent)
+
         }
-            showNextCard()
-            }
-                val intent = Intent(this@MainScreen, MainActivity::class.java)
-                startActivity(intent)
+        val showNextCard = Unit
 
-            }
-                val showNextCard = Unit
-
-            }
-
+    }
+}
 
 
 
