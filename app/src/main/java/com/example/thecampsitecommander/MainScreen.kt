@@ -30,22 +30,17 @@ class MainScreen : ComponentActivity() {
         setContent {
             TheCampsiteCommanderTheme {
                 {
-                Toast.makeText(
-                    this,
-                    "Campfire",
-                    Toast.LENGTH_SHORT
-                ).show()
-            }
+                    Toast.makeText(
+                        this,
+                        "Campfire",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
                 showNextCard()
             }
             val intent = Intent(this@MainScreen, MainActivity::class.java)
             startActivity(intent)
 
         }
-        val showNextCard = Unit
-
     }
 }
-
-
-

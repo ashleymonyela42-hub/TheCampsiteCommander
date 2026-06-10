@@ -27,45 +27,37 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             TheCampsiteCommanderTheme {
-                Button(
-                    onClick = {
+                var item by remember { mutableStateOf("") }
+                OutlinedTextField(
+                    value = item,
+                    onValueChange = { item = it },
+                    label = { Text("item") }
+                )
+                var category by remember { mutableStateOf("") }
+                OutlinedTextField(
+                    value = category,
+                    onValueChange = { category= it },
+                    label = { Text("category") }
+                )
+                var quantity by remember { mutableStateOf("") }
+                OutlinedTextField(
+                    value = quantity,
+                    onValueChange = { quantity = it },
+                    label = { Text("quantity") }
+                )
+                var comment by remember { mutableStateOf("") }
+                OutlinedTextField(
+                    value = comment,
+                    onValueChange = { comment = it },
+                    label = { Text("comment") }
+                )
+    }
 
-                    }
-                ) {
-                    Text("Add gear")
-                    var item by remember { mutableStateOf("") }
-                    OutlinedTextField(
-                        value = item,
-                        onValueChange = { item = it },
-                        label = { Text("item") }
-                    )
-                    var category by remember { mutableStateOf("") }
-                    OutlinedTextField(
-                        value = category,
-                        onValueChange = { category = it },
-                        label = { Text("category") }
-                    )
-                    var quantity by remember { mutableStateOf("") }
-                    OutlinedTextField(
-                        value = quantity,
-                        onValueChange = { quantity = it },
-                        label = { Text("quantity") }
-                    )
-                    var comment by remember { mutableStateOf("") }
-                    OutlinedTextField(
-                        value = comment,
-                        onValueChange = { comment = it },
-                        label = { Text("comment") }
-                    )
-
-                    val totalitems = 3
-
-                }
 
 
 
             }
         }
     }
-}
+
 
