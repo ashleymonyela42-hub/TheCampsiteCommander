@@ -23,7 +23,7 @@ class Results : ComponentActivity() {
                 val totalitems = intent.getIntExtra("totalitems", 0)
                 val item = intent.getStringExtra("item")
                 val category = intent.getStringExtra("category")
-                val quantity = intent.getStringExtra("quality")
+                val quantity = intent.getStringExtra("quantity")
                 val comment = intent.getStringExtra("comment")
                 Button(
                     onClick = {

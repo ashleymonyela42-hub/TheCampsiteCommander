@@ -27,37 +27,29 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             TheCampsiteCommanderTheme {
-                var item by remember { mutableStateOf("") }
-                OutlinedTextField(
-                    value = item,
-                    onValueChange = { item = it },
-                    label = { Text("item") }
-                )
-                var category by remember { mutableStateOf("") }
-                OutlinedTextField(
-                    value = category,
-                    onValueChange = { category= it },
-                    label = { Text("category") }
-                )
-                var quantity by remember { mutableStateOf("") }
-                OutlinedTextField(
-                    value = quantity,
-                    onValueChange = { quantity = it },
-                    label = { Text("quantity") }
-                )
-                var comment by remember { mutableStateOf("") }
-                OutlinedTextField(
-                    value = comment,
-                    onValueChange = { comment = it },
-                    label = { Text("comment") }
-                )
+
+                {
+                    Toast.makeText(
+                        this,
+                        "Campfire",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
+                showNextCard()
+            }
+            val intent = Intent(this@MainActivity, MainScreen::class.java)
+            startActivity(intent)
     }
 
 
 
 
             }
-        }
+
+    private fun showNextCard() {
+        TODO("Not yet implemented")
     }
+}
+
 
 
