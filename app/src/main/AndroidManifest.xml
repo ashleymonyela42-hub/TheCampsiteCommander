@@ -35,6 +35,12 @@
             android:label="@string/title_activity_detailed_view"
             android:theme="@style/Theme.TheCampsiteCommander"
             android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".MainScreen"
+            android:exported="false"
+            android:label="@string/title_activity_main_screen"
+            android:theme="@style/Theme.TheCampsiteCommander"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>
